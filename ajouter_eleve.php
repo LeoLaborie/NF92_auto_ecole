@@ -1,6 +1,7 @@
 <html>
     <head>
         <meta charset="utf-8" />
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         
@@ -22,6 +23,7 @@
                     }
                     print("</ul>");
                 }
+                print("test");
             ?>
         </ul>
     </body>

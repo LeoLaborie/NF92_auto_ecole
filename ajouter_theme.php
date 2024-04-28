@@ -1,10 +1,12 @@
 <html>
     <head>
         <meta charset="utf-8" />
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         
             <?php
+                print("oui");
                 $nom = $_POST['nom'];
                 $description = $_POST['description'];
                 $array1= array("nom", "description");
