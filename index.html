@@ -1,18 +1,21 @@
 <!DOCTYPE html>
-<html>
-    <head> 
-        <title>
-            Mon site d'auto école
-        </title>
-        <meta charset="utf-8"/>
-        <link rel="stylesheet" href="style.css"/>
-    </head>
-    
-        <frameset cols="20%,80%">
-            <frame name="menu" src="menu.html"/>
-            <frame name="contenu" src="accueil.html"/>
-        </frameset>
-        
-    
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Mon site d'auto école</title>
+</head>
+<body>
+    <div class="container">
+        <nav class="menu">
+            <h1>Menu</h1>
+            <a href="accueil.html" target="contenu">Accueil</a>
+            <a href="ajout_eleve.html" target="contenu">Ajouter un élève</a>
+            <a href="ajout_theme.html" target="contenu">Ajouter un thème</a>
+            <a href="ajout_seance.php" target="contenu">Ajouter une séance</a>
+        </nav>
+        <iframe class="content" name="contenu" src="accueil.html"></iframe>
+    </div>
+</body>
 </html>
-
