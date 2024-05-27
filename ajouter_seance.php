@@ -36,7 +36,7 @@
                     mysqli_close($connect);
                     exit;
                     }
-                    $n_seances_existantes = mysql_num_rows($result);
+                    $n_seances_existantes = mysqli_num_rows($result);
                     if ($n_seances_existantes > 0){
                         echo "<p> Il existe deja une seance sur ce theme à cette date</p>";
                         mysqli_close($connect);

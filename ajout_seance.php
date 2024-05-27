@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
+    <div class="form-container">
     <h1>Ajout d'une séance</h1>
-
     <form action="ajouter_seance.php" method="post">
         <label for="date">Date de la séance</label>
         <input type="date" name="date"><br>
@@ -30,27 +30,21 @@
             mysqli_close($connect);
             exit;
         }
-        else{
-            print("opération réussie");
-            print("<br>");
-        }
 
-
-        echo "<FORM METHOD='POST' ACTION='ajouter_seance.php' >";
         while ($row = mysqli_fetch_array($liste_themes_actifs, MYSQLI_NUM))
         {
 
             echo"<option value='$row[0]'>$row[1]</option>";
             
         }
-        echo "</select>";
+        echo "</select>"; 
         echo "<BR>";
         echo "<INPUT type='submit' value='Enregistrer séance'>";
-        echo "</FORM>";
         mysqli_close($connect);
         
         ?>
         </select>
     </form>
+    </div>
 </body>
 </html>
