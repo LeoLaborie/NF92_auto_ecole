@@ -146,6 +146,8 @@ label {
     color: #333;
 }
 
+
+input[type="number"],
 input[type="text"],
 textarea,
 input[type="date"],
