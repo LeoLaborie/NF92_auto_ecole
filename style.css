@@ -141,11 +141,10 @@ body {
 .form-container {
     background: #fff;
     padding: 50px;
-    /* Ajuste le padding pour être plus grand */
+
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 750px;
-    /* Ajuste la largeur du formulaire */
 }
 
 /* Titres */
@@ -157,11 +156,6 @@ h1 {
     color: #333;
 }
 
-/* Styles pour les groupes de formulaire */
-.form-group {
-    margin-bottom: 37.5px;
-    /* Ajuste les marges des groupes de formulaire */
-}
 
 /* Styles pour les étiquettes et les champs de saisie */
 label {

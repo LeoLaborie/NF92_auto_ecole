@@ -13,13 +13,15 @@
         <h1>Ajout d'une séance</h1>
         <form action="ajouter_seance.php" method="post">
             <label for="date">Date de la séance</label>
-            <input type="date" name="date"><br>
+            <!-- la date est dans le futur -->
+            <input type="date" name="date" min="<?php echo date('Y-m-d'); ?>" required><br>
 
+            <!-- effectif > 0 -->
             <label for="effmax">Effectif maximum de la séance</label>
-            <input type="text" name="effmax"><br>
+            <input type="number" name="effmax" min="1" required><br>
 
             <label for="idtheme">Thème</label>
-            <select name="idtheme" id="theme">
+            <select name="idtheme" id="theme" required>
 
                 <?php
                 include("connexion.php");

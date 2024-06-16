@@ -13,7 +13,10 @@
     // Récupérer l'ID de la séance sélectionnée
     $idseance = $_POST['idseance'];
 
-
+    if (empty($idseance)) {
+        echo "Veuillez sélectionner une séance.";
+        exit;
+    }
     // Requête pour obtenir les élèves inscrits à cette séance
     $query = "SELECT *
                 FROM inscription

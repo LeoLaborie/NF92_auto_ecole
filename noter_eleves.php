@@ -13,6 +13,10 @@
     // Récupérer les données du formulaire
     $idseance = $_POST['idseance'];
     $eleves = $_POST['eleves'];
+    if (empty($idseance) || empty($eleves)) {
+        echo "Veuillez sélectionner une séance et entrer les notes des élèves.";
+        exit;
+    }
 
     // Mettre à jour les notes pour chaque élève
     foreach ($eleves as $ideleve => $note) {

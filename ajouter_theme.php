@@ -18,6 +18,7 @@
             if (empty($array2[$i])) print("Le champ " . $array1[$i] . " est vide, veuillez le remplir. <br>");
         }
     } else {
+        echo "<div class='form-container'>";
         print("<ul>");
         for ($i = 0; $i < 2; $i++) {
             print("<li>" . $array1[$i] . " : " . $array2[$i] . " </li>");
@@ -27,7 +28,7 @@
         include("connexion.php");
 
         $query = 'INSERT INTO themes values (null, "' . $_POST['nom'] . '", "' . "0" . '", "' . $_POST['description'] . '")'; // une chaine de caractere nommee $query
-        print($query);
+        // print($query);
         print("<br>");
 
         $result = mysqli_query($connect, $query);
@@ -41,7 +42,7 @@
             print("opération réussie");
             print("<br>");
         }
-
+        echo "</div>";
         mysqli_close($connect);
     }
     ?>

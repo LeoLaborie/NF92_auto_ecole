@@ -23,7 +23,7 @@
     }
 
     if (mysqli_num_rows($liste_eleves) > 0) {
-        echo "<form action='consulter_eleve.php' method='post' class='form-container'>";
+        echo "<form action='visualiser_calendrier_eleve.php' method='post' class='form-container'>";
         echo "<label for='ideleve'><h2>Sélectionner un élève :</h2></label>";
         echo "<select name='ideleve' id='ideleve' requiered>";
         while ($row = $liste_eleves->fetch_assoc()) {

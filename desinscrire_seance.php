@@ -15,12 +15,14 @@
     include("connexion.php");
 
     // Requête pour obtenir tous les thèmes
-    $idtheme = $_POST["idtheme"];
-    if (empty($idtheme)) {
-        echo "Veuillez sélectionner un thème à supprimer.";
+    $ideleve = $_POST["ideleve"];
+    $idseance = $_POST["idseance"];
+    if (empty($idseance) || empty($ideleve)) {
+        echo "Veuillez sélectionner un élève et une séance correct.";
         exit;
     }
-    $query = "DELETE FROM themes WHERE idtheme = $idtheme";
+
+    $query = "DELETE FROM inscription WHERE idseance = $idseance AND ideleve = $ideleve";
     $result = mysqli_query($connect, $query);
     if (!$result) // TOUJOURS tester le resultat de la requete
     {
@@ -28,7 +30,7 @@
         mysqli_close($connect);
         exit;
     }
-    echo "theme correctement supprimé !";
+    echo "élève correctement desinscrit de la séance !";
     ?>
 </body>
 

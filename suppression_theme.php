@@ -27,7 +27,7 @@
         echo "<div class='form-container'>";
         echo "<form action='supprimer_theme.php' method='post'>";
         echo "<label for='idtheme'><h2>Sélectionner un thème à supprimer :</h2></label>";
-        echo "<select name='idtheme' id='idtheme'>";
+        echo "<select name='idtheme' id='idtheme' requiered>";
         while ($row = $result->fetch_assoc()) {
             echo "<option value='" . $row["idtheme"] . "'><strong>" . $row["nom"] . "</strong> " . $row["description"] . "</option>";
         }

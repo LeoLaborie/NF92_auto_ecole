@@ -10,7 +10,10 @@
 <body>
     <?php
     include("connexion.php");
-    $liste_seances_passees = mysqli_query($connect, "SELECT idseance, nom, DateSeance FROM seances inner join themes on seances.Idtheme = themes.idtheme WHERE DateSeance < CURRENT_DATE;");
+    $liste_seances_passees = mysqli_query($connect, "SELECT idseance, nom, DateSeance 
+                                                    FROM seances 
+                                                    inner join themes on seances.Idtheme = themes.idtheme 
+                                                    WHERE DateSeance < CURRENT_DATE;");
 
     if (!$liste_seances_passees) // TOUJOURS tester le resultat de la requete
     {
@@ -22,7 +25,7 @@
     if (mysqli_num_rows($liste_seances_passees) > 0) {
         echo "<form class='form-container' action='valider_seance.php' method='post'>";
         echo "<h2>Choisisser une séance</h2>";
-        echo "<select name='idseance'>";
+        echo "<select name='idseance' requiered>";
         while ($row = $liste_seances_passees->fetch_assoc()) {
             echo "<option value='" . $row["idseance"] . "'>" . $row["nom"] . " du " . $row["DateSeance"] . "</option>";
         }

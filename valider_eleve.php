@@ -17,7 +17,16 @@
         for ($i = 0; $i < 3; $i++) {
             if (empty($array2[$i])) print("Le champ " . $array1[$i] . " est vide, veuillez le remplir. <br>");
         }
-    } else {
+    } else if (!preg_match("/^\d{4}-\d{2}-\d{2}$/", $date_naissance)) {
+        print("La date de naissance doit être au format YYYY-MM-DD");
+    } else if (strtotime($date_naissance) > strtotime(date("Y-m-d"))) {
+        print("La date de naissance ne peut pas être supérieure à la date actuelle");
+    } else if (strtotime($date_naissance) < strtotime("1900-01-01")) {
+        print("La date de naissance ne peut pas être inférieure à 1900-01-01");
+    } else if (!preg_match("/^[a-zA-Z ]*$/", $nom) || !preg_match("/^[a-zA-Z ]*$/", $prenom)) {
+        print("Le nom et le prénom ne peuvent contenir que des lettres et des espaces");
+    } 
+    else {
 
         print("<ul>");
         for ($i = 0; $i < 3; $i++) {

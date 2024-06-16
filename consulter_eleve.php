@@ -13,7 +13,10 @@
 
     // Récupérer l'ID de l'élève sélectionné
     $ideleve = $_POST['ideleve'];
-
+    if (empty($ideleve)) {
+        echo "Veuillez sélectionner un élève.";
+        exit;
+    }
     // Requête pour obtenir les caractéristiques de l'élève
     $query = "SELECT * FROM eleves WHERE ideleve = $ideleve";
     $result = mysqli_query($connect, $query);
