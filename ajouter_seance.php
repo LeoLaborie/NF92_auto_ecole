@@ -26,9 +26,7 @@
     else if (strtotime($date) < strtotime(date("Y-m-d"))) {
         print("La date ne peut pas être inférieure à la date actuelle");
     }
-    else if (strtotime($date) > strtotime("2030-01-01")) {
-        print("La date ne peut pas être supérieure à 2030-01-01");
-    }
+    
     //verifier si effmax est un entier > 0
     else if (!preg_match("/^[0-9]*$/", $effmax) || $effmax <= 0) {
         print("L'effectif maximum doit être un entier supérieur à 0");

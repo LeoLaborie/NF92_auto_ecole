@@ -20,7 +20,8 @@
         echo "Veuillez sélectionner un thème à supprimer.";
         exit;
     }
-    $query = "DELETE FROM themes WHERE idtheme = $idtheme";
+    //update "supprimer" en le mettant à 1
+    $query = "UPDATE themes SET supprimer = 1 WHERE idtheme = $idtheme";
     $result = mysqli_query($connect, $query);
     if (!$result) // TOUJOURS tester le resultat de la requete
     {

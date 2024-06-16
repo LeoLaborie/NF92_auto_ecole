@@ -33,7 +33,7 @@
                                                         FROM seances 
                                                         inner join themes on seances.Idtheme = themes.idtheme 
                                                         LEFT OUTER JOIN inscription on seances.idseance = inscription.idseance 
-                                                        where DateSeance >= CURRENT_DATE() 
+                                                        where DateSeance >= CURRENT_DATE() AND themes.supprime = 0
                                                         GROUP BY seances.idseance 
                                                         HAVING nbEleve < EffMax");
 

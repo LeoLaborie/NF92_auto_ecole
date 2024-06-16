@@ -26,7 +26,7 @@
                 <?php
                 include("connexion.php");
 
-                $liste_themes_actifs = mysqli_query($connect, "SELECT * FROM themes WHERE supprime=FALSE");
+                $liste_themes_actifs = mysqli_query($connect, "SELECT * FROM themes WHERE supprime=0");
 
                 if (!$liste_themes_actifs) // TOUJOURS tester le resultat de la requete
                 {

@@ -22,7 +22,7 @@
                 FROM inscription
                 inner JOIN seances ON inscription.idseance = seances.idseance
                 inner join themes on seances.idtheme = themes.idtheme
-                WHERE inscription.ideleve = $ideleve AND seances.DateSeance >= CURDATE()";
+                WHERE inscription.ideleve = $ideleve AND seances.DateSeance >= CURDATE() AND themes.supprime = 0";
     $result = mysqli_query($connect, $query);
 
     if (!$result) // TOUJOURS tester le resultat de la requete

@@ -27,7 +27,7 @@
                 inner join inscription ON eleves.ideleve = inscription.ideleve 
                 inner join seances ON inscription.idseance = seances.idseance
                 inner join themes ON seances.idtheme = themes.idtheme
-                WHERE eleves.ideleve = $ideleve AND seances.DateSeance >= CURDATE()";
+                WHERE eleves.ideleve = $ideleve AND seances.DateSeance >= CURDATE() AND themes.supprime = 0";
     $result = mysqli_query($connect, $query);
     if (!$result) // TOUJOURS tester le resultat de la requete
     {

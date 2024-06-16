@@ -13,7 +13,7 @@
     $liste_seances_passees = mysqli_query($connect, "SELECT idseance, nom, DateSeance 
                                                     FROM seances 
                                                     inner join themes on seances.Idtheme = themes.idtheme 
-                                                    WHERE DateSeance < CURRENT_DATE;");
+                                                    WHERE DateSeance < CURRENT_DATE AND themes.supprime = 0;");
 
     if (!$liste_seances_passees) // TOUJOURS tester le resultat de la requete
     {

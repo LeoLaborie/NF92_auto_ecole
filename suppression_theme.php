@@ -13,7 +13,7 @@
     include("connexion.php");
 
     // Requête pour obtenir tous les thèmes
-    $query = "SELECT * FROM themes";
+    $query = "SELECT * FROM themes where supprimer = 0";
     $result = mysqli_query($connect, $query);
     if (!$result) // TOUJOURS tester le resultat de la requete
     {
