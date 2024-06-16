@@ -5,7 +5,8 @@ body {
     padding: 0;
     display: flex;
     height: 100vh;
-    font-size: 2.5em; /* Augmente la taille de base de la police */
+    font-size: 2.5em;
+    /* Augmente la taille de base de la police */
 }
 
 /* Conteneur principal */
@@ -22,7 +23,8 @@ body {
     padding: 20px;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
-    overflow-y: auto; /* Pour gérer le débordement si le menu est trop long */
+    overflow-y: auto;
+    /* Pour gérer le débordement si le menu est trop long */
 }
 
 /* Styles pour les liens du menu */
@@ -45,30 +47,41 @@ body {
 .content {
     width: 80%;
     border: none;
-    height: 100%; /* Pour occuper toute la hauteur disponible */
+    height: 100%;
+    /* Pour occuper toute la hauteur disponible */
 }
 
 /* Section d'introduction */
 header {
     background: #bbb;
     color: #fff;
-    padding: 50px 0; /* Ajuste le padding pour être plus grand */
+    padding: 50px 0;
+    /* Ajuste le padding pour être plus grand */
     margin-top: 50px;
     text-align: center;
 }
 
-.intro, .services, .testimonials, .contact {
-    padding: 50px; /* Ajuste le padding pour être plus grand */
-    margin: 50px 0; /* Ajuste les marges pour être plus grandes */
+.intro,
+.services,
+.testimonials,
+.contact {
+    padding: 50px;
+    /* Ajuste le padding pour être plus grand */
+    margin: 50px 0;
+    /* Ajuste les marges pour être plus grandes */
     border: 1px solid #ddd;
     border-radius: 4px;
     background-color: #f9f9f9;
 }
 
 /* Titres des sections */
-.intro h2, .services h2, .testimonials h2, .contact h2 {
+.intro h2,
+.services h2,
+.testimonials h2,
+.contact h2 {
     color: #333;
-    font-size: 1.5em; /* Ajuste la taille des titres */
+    font-size: 1.5em;
+    /* Ajuste la taille des titres */
 }
 
 /* Liste des services */
@@ -79,8 +92,10 @@ header {
 
 .services li {
     background: #eee;
-    margin: 20px 0; /* Ajuste les marges des éléments de la liste */
-    padding: 20px; /* Ajuste le padding des éléments de la liste */
+    margin: 20px 0;
+    /* Ajuste les marges des éléments de la liste */
+    padding: 20px;
+    /* Ajuste le padding des éléments de la liste */
     border-radius: 4px;
 }
 
@@ -88,20 +103,24 @@ header {
 blockquote {
     background: #f4f4f4;
     border-left: 10px solid #ccc;
-    margin: 50px 0; /* Ajuste les marges des blockquotes */
-    padding: 20px; /* Ajuste le padding des blockquotes */
+    margin: 50px 0;
+    /* Ajuste les marges des blockquotes */
+    padding: 20px;
+    /* Ajuste le padding des blockquotes */
     font-style: italic;
 }
 
 blockquote footer {
     text-align: right;
     color: #666;
-    font-size: 0.8em; /* Ajuste la taille de la police des footers */
+    font-size: 0.8em;
+    /* Ajuste la taille de la police des footers */
 }
 
 /* Contact */
 .contact p {
-    margin: 20px 0; /* Ajuste les marges des paragraphes de contact */
+    margin: 20px 0;
+    /* Ajuste les marges des paragraphes de contact */
 }
 
 /* Styles de base pour centrer le formulaire */
@@ -114,35 +133,41 @@ body {
     align-items: center;
     height: 100vh;
     background-color: #f4f4f4;
-    font-size: 1.5em; /* Augmente la taille de base de la police */
+    font-size: 1.5em;
+    /* Augmente la taille de base de la police */
 }
 
 /* Conteneur du formulaire */
 .form-container {
     background: #fff;
-    padding: 50px; /* Ajuste le padding pour être plus grand */
+    padding: 50px;
+    /* Ajuste le padding pour être plus grand */
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 750px; /* Ajuste la largeur du formulaire */
+    width: 750px;
+    /* Ajuste la largeur du formulaire */
 }
 
 /* Titres */
 h1 {
-   
-    font-size: 2.5em; /* Ajuste la taille des titres */
+
+    font-size: 2.5em;
+    /* Ajuste la taille des titres */
     text-align: center;
     color: #333;
 }
 
 /* Styles pour les groupes de formulaire */
 .form-group {
-    margin-bottom: 37.5px; /* Ajuste les marges des groupes de formulaire */
+    margin-bottom: 37.5px;
+    /* Ajuste les marges des groupes de formulaire */
 }
 
 /* Styles pour les étiquettes et les champs de saisie */
 label {
     display: block;
-    margin-bottom: 12.5px; /* Ajuste les marges des étiquettes */
+    margin-bottom: 12.5px;
+    /* Ajuste les marges des étiquettes */
     color: #333;
 }
 
@@ -153,11 +178,13 @@ textarea,
 input[type="date"],
 input[type="submit"] {
     width: 100%;
-    padding: 20px; /* Ajuste le padding des champs de saisie */
+    padding: 20px;
+    /* Ajuste le padding des champs de saisie */
     box-sizing: border-box;
     border: 1px solid #ddd;
     border-radius: 4px;
-    font-size: 1em; /* Ajuste la taille des champs de saisie */
+    font-size: 1em;
+    /* Ajuste la taille des champs de saisie */
 }
 
 /* Styles pour le bouton de soumission */
@@ -167,7 +194,8 @@ input[type="submit"] {
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    font-size: 1em; /* Ajuste la taille du bouton de soumission */
+    font-size: 1em;
+    /* Ajuste la taille du bouton de soumission */
 }
 
 input[type="submit"]:hover {
