@@ -169,8 +169,7 @@ label {
 input[type="number"],
 input[type="text"],
 textarea,
-input[type="date"],
-input[type="submit"] {
+input[type="date"] {
     width: 100%;
     padding: 20px;
     /* Ajuste le padding des champs de saisie */
@@ -182,6 +181,7 @@ input[type="submit"] {
 }
 
 /* Styles pour le bouton de soumission */
+.button,
 input[type="submit"] {
     background-color: #333;
     color: #fff;

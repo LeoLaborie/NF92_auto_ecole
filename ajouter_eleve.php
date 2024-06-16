@@ -2,13 +2,14 @@
 
 <head>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="style.css">
     <title>Mon site d'auto école</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
+    <div class="form-container">
     <?php
+    
     $nom = $_POST['nom'];
     $prenom = $_POST['prenom'];
     $date_naissance = $_POST['date_naissance'];
@@ -64,6 +65,7 @@
     }
     ?>
     </ul>
+    </div>
 </body>
 
 </html>

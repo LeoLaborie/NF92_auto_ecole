@@ -3,10 +3,12 @@
 
 <head>
     <meta charset="UTF-8">
+    <!-- <link rel="stylesheet" href="style.css" /> -->
     <title>Document</title>
 </head>
 
 <body>
+
     <?php
     $nom = $_POST['nom'];
     $prenom = $_POST['prenom'];
@@ -65,13 +67,14 @@
                 <input type="hidden" name="prenom" value="<?php $prenom ?>">
                 <input type="hidden" name="date_naissance" value="<?php $date_naissance ?>">
                 <input type="submit" value="OUI">
-                <a href="ajout_eleve.html"> <button type="button">non</button></a>
+                <a href="ajout_eleve.html"> <button class="button" type="button">non</button></a>
             </form>
     <?php
         }
     }
     mysqli_close($connect);
     ?>
+ 
 </body>
 
 </html>

@@ -21,7 +21,7 @@
         exit;
     }
     //update "supprimer" en le mettant à 1
-    $query = "UPDATE themes SET supprimer = 1 WHERE idtheme = $idtheme";
+    $query = "UPDATE themes SET supprime = 1 WHERE idtheme = $idtheme";
     $result = mysqli_query($connect, $query);
     if (!$result) // TOUJOURS tester le resultat de la requete
     {
